@@ -7,9 +7,20 @@
     <title>Document 1</title>
 </head>
 <body>
-    <div>   
-        <h1>Hello World</h1>
-    </div>
+    <p id="ES6"></p>
     
+    <script>
+        const me ={
+            firstName: "Kenneth",
+            middleName: "H.",
+            lastName: "Alvarado",
+            age: "22"
+        }
+
+        let {firstName, middleName, lastName, age } = person;
+
+        document.getElementById("ES6").innerHTML =
+        firstName + middleName + lastName + " is " + age + "years old." ;
+    </script>
 </body>
 </html>
